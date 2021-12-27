@@ -3,8 +3,10 @@ package com.example.lstore.ui.register
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
+import com.example.lstore.R
 import com.example.lstore.dataBase.DataBase
 import com.example.lstore.databinding.ActivityRegisterBinding
 import com.example.lstore.model.User
@@ -28,6 +30,13 @@ class RegisterActivity : AppCompatActivity() {
 
         setupListeners()
         setupObservers()
+        initOnClick()
+    }
+
+    private fun initOnClick() {
+        binding.ibBackButton.setOnClickListener {
+            this.finish()
+        }
     }
 
     private fun setupListeners() = with(binding) {
