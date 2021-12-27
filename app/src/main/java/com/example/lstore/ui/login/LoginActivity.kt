@@ -1,4 +1,5 @@
 package com.example.lstore.ui.login
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +7,8 @@ import androidx.lifecycle.lifecycleScope
 import com.example.lstore.R
 import com.example.lstore.dataBase.DataBase
 import com.example.lstore.databinding.ActivityLoginBinding
+import com.example.lstore.ui.cart.CartActivity
+import com.example.lstore.ui.register.RegisterActivity
 import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity() {
@@ -28,11 +31,11 @@ class LoginActivity : AppCompatActivity() {
 
     private fun loginOnclick() = with(binding) {
         btnLogin.setOnClickListener {
-            lifecycleScope.launch { addRegistry() }
+            lifecycleScope.launch { login() }
         }
     }
 
-    private suspend fun addRegistry() = with(binding) {
+    private suspend fun login() = with(binding) {
         viewModel.checkRegistry(
             email = edtEmail.text.toString(),
             password = edtPassword.text.toString()
@@ -50,7 +53,8 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun showSuccess() {
-        Toast.makeText(this, "Login feito", Toast.LENGTH_LONG).show()
+        val intent = Intent(this, RegisterActivity::class.java).apply {}
+        startActivity(intent)
     }
     private fun showError() {
         Toast.makeText(this, "Erro ao fazer Login, E-mail ou Senha invalidos ", Toast.LENGTH_LONG).show()

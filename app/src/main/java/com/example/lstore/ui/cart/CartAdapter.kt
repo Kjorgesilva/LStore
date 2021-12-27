@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.lstore.R
 import com.example.lstore.model.Product
 
-class ProductAdapter(private val products: List<Product> = listOf(), private val activity: String) :
-    RecyclerView.Adapter<ProductAdapter.ViewHolder>() {
+class CartAdapter(private val products: List<Product> = listOf(), private val activity: String) :
+    RecyclerView.Adapter<CartAdapter.ViewHolder>() {
 
     var cartList: ArrayList<Product> = ArrayList()
 
