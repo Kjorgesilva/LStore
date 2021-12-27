@@ -5,10 +5,12 @@ import com.example.lstore.model.User
 
 @Dao
 interface UserDao {
+
     companion object {
         const val QUERY_USER = "Select * from tab_user"
         const val QUERY_USER_ID = "Select * from tab_user where id = :key "
     }
+
     @Insert
     suspend fun insert(user: User)
 

@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">LStore</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+    <!-- Register Activity -->
+    <string name="txt_register_title">Registro</string>
+    <string name="txt_register_subtitle">Entre com seus dados para criar uma nova conta.</string>
+    <string name="txt_register_name">Nome</string>
+    <string name="txt_register_email">E-mail</string>
+    <string name="txt_register_password">Senha</string>
+    <string name="txt_register_repeat_password">Confirme sua senha</string>
+    <string name="txt_register_birth_date">Data de nascimento</string>
+    <string name="txt_register_gender">Sexo</string>
+    <string name="txt_register_cpf">CPF</string>
+    <string name="txt_register_button">Cadastrar</string>
+
+    <!-- Cart Activity -->
+    <string name="txt_cart_title">Carrinho de Compras</string>
+    <string name="txt_cart_button">Finalizar Compra</string>
+
 </resources>
