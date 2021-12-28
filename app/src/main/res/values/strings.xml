@@ -18,6 +18,7 @@
     <string name="txt_register_password">Senha</string>
     <string name="txt_register_repeat_password">Confirme sua senha</string>
     <string name="txt_register_birth_date">Data de nascimento</string>
+    <string name="txt_register_phone_number">Telefone</string>
     <string name="txt_register_gender">Sexo</string>
     <string name="txt_register_cpf">CPF</string>
     <string name="txt_register_button">Cadastrar</string>
