@@ -62,7 +62,8 @@ class RegisterActivity : AppCompatActivity() {
             password = binding.edtPassword.text.toString(),
             birthDate = binding.edtBirthdate.text.toString(),
             cpf = binding.edtCpf.text.toString(),
-            gender = binding.edtGender.text.toString()
+            gender = binding.edtGender.text.toString(),
+            phoneNumber = binding.edtPhoneNumber.text.toString()
         )
     }
 

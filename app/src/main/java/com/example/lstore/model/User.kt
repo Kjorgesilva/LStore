@@ -33,5 +33,9 @@ data class User(
 
     //cpf do usuario.
     @ColumnInfo(name = "cpf")
-    var cpf: String
+    var cpf: String,
+
+    //telefone do usuario.
+    @ColumnInfo(name = "phoneNumber")
+    var phoneNumber: String
 )

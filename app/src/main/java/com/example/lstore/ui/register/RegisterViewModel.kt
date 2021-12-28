@@ -25,16 +25,18 @@ class RegisterViewModel(dataBase: DataBase) : ViewModel() {
         password: String,
         birthDate: String,
         cpf: String,
-        gender: String
+        gender: String,
+        phoneNumber: String
     ) {
-        if (name.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty() && birthDate.isNotEmpty() && cpf.isNotEmpty() && gender.isNotEmpty()) {
+        if (name.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty() && birthDate.isNotEmpty() && cpf.isNotEmpty() && gender.isNotEmpty() && phoneNumber.isNotEmpty()) {
             val user = User(
                 name = name,
                 email = email,
                 password = password,
                 birthDate = birthDate,
                 cpf = cpf,
-                gender = gender
+                gender = gender,
+                phoneNumber = phoneNumber
             )
             Log.e("add", "Add User: $user")
             saveRegister(user)
